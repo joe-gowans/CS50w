@@ -3,25 +3,61 @@
     <head>
         <title>Google Images</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="top-row">
-            <!-- Top row -->
-        </div>
-        
-        <div class="logo">
-            <!-- Logo -->
-            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png alt="logo" id="main-logo">
-            <p class="logo-subtext">images</p>
-        </div>
-        <div class="search">
-            <!-- Search fields -->
-            <form id="search-form" action="https://google.com/search">
-                <input type="text" name="q" class="search_input">
-            </form>
-        </div>
-        <div class="bottom-row">
-            <!-- Bottom row -->
-        </div>
+        <header>
+            <nav>
+                <div class="nav-elements">
+                    <ul class="right-nav">
+                        <li class="list-icon"><ion-icon name="apps"></ion-icon></li>
+                        <li><a class="btn btn-blue" href="#">Sign in</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="logo-image-section">
+            <div class="logo center">
+                <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png alt="logo" id="main-logo">
+                <div class="logo-subtext">
+                    <span>images</span>
+                </div>
+            </div>
+            <div class="search center">
+                <div class="search-border image-search">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <form id="image-form" action="https://google.com/images">
+                        <input type="text" name="q" class="search_input">
+                    </form>
+                    <ul>
+                        <li><ion-icon name="camera"></ion-icon></li>
+                        <li><ion-icon name="mic"></ion-icon></li>
+                        <li><ion-icon id="last-search" name="search-outline"></ion-icon></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="top">
+                <p>United Kingdom</p>
+            </div>
+            <div class="bottom">
+                <ul class="left-nav">
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search works</a></li>
+                </ul>
+                <ul class="right-nav">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>   
     </body>
 </html>
