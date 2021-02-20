@@ -24,6 +24,12 @@ header {
     height: 60px;
 }
 
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
 /* ------------------------------------- */
 /* General reusable */
 /* ------------------------------------- */
@@ -271,7 +277,7 @@ footer div {
 }
 
 /* ------------------------------------------------------------ */
-/* FOOTER */
+/* Image page */
 /* ------------------------------------------------------------ */
 
 .logo-subtext {
@@ -285,4 +291,104 @@ footer div {
 
 .image-search {
     margin-top: 0px;
+}
+
+/* ------------------------------------------------------------ */
+/* Advanced Search Page */
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------- */
+/* Header */
+/* ------------------------------------- */
+
+.nav-adv {
+    background-color: rgb(241, 241, 241);
+}
+
+.google-small-logo {
+    height: 30px;
+    width: auto;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+.icon-adv {
+    background-color: rgb(241, 241, 241);
+}
+
+.title {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 45px;
+}
+
+.bar {
+    border-bottom: 1px solid #ebebeb;;
+}
+
+.header-adv {
+    padding: 0;
+}
+
+/* ------------------------------------- */
+/* Form section */
+/* ------------------------------------- */
+
+.forms {
+    padding-bottom: 20px;
+}
+
+.form-col {
+    width: 800px;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    padding: 46px 0;
+    margin-left: 45px;
+}
+
+.form-section ul {
+    list-style: none;
+}
+
+.form-headings {
+    padding-bottom: 20px;
+}
+
+.flex-container {
+    width: 760px;
+}
+
+.upper-form input {
+    height: 25px;
+}
+
+.forms li {
+    padding-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms input {
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    width: 575px;
+    height: 28px;
+}
+
+.forms label,
+.forms div span {
+    line-height: 28px;
+    font-size: 13px;
+}
+
+.forms li div {
+    display: flex;
+    justify-content: space-between;
+    width: 575px;
+}
+
+.forms li div input {
+    flex-basis: 45%;
 }
