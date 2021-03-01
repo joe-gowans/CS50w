@@ -39,13 +39,15 @@ h2 {
     text-decoration: none;
 }
 
-.btn-blue {
+.btn-blue,
+input[type=submit] {
     background-color: #4285f4;
     padding: 10px 30px;
     color: white;
 }
 
-.btn-blue:hover {
+.btn-blue:hover,
+input[type=submit]:hover {
     text-decoration: none;
     background-color: #5190f7;
 }
@@ -360,7 +362,7 @@ footer div {
     width: 760px;
 }
 
-.upper-form input {
+.upper-form input:not(.submit-btn) {
     height: 25px;
 }
 
@@ -370,7 +372,7 @@ footer div {
     justify-content: space-between;
 }
 
-.forms input {
+.forms input:not(.submit-btn) {
     border: 1px solid #d9d9d9;
     border-top: 1px solid #c0c0c0;
     width: 575px;
@@ -391,4 +393,20 @@ footer div {
 
 .forms li div input {
     flex-basis: 45%;
+}
+
+.forms li:last-of-type {
+    justify-content: flex-end;
+}
+
+li .submit-btn {
+    padding: 7.5px 10px;
+    border-radius: 2px;
+    border: 1px solid #3079ed;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.text-input {
+    padding: 1px 8px;
 }

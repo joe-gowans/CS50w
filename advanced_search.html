@@ -23,7 +23,7 @@
         <div class="bar"></div>
 
         <section class="form-section">
-            <form>
+            <form action="https://google.com/search">
                 <div class="form-col upper-form">
                     <div class="form-headings">
                         <h2>Find pages with...</h2>
@@ -32,33 +32,36 @@
                             <ul>
                                 <li>
                                     <label>all these words:</label>
-                                    <input type="text">
+                                    <input type="text" name="as_q" class="text-input">
                                 </li>
                                 <li>
                                     <label>this exact word or phrase:</label>
-                                    <input type="text">
+                                    <input type="text" name="as_epq" class="text-input">
                                 </li>
                                 <li>
                                     <label>any of these words:</label>
-                                    <input type="text">
+                                    <input type="text" name="as_oq" class="text-input">
                                 </li>
                                 <li>
                                     <label>none of these words:</label>
-                                    <input type="text">
+                                    <input type="text" name="as_eq" class="text-input">
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <label>numbers ranging from:</label>
                                     <div class="two-box">
                                         <input type="text">
                                         <span>to</span>
                                         <input type="text">
                                     </div>
+                                </li> -->
+                                <li>
+                                    <input class="submit-btn" type="submit" value="Advanced Search">
                                 </li>
                             </ul>
                     </div>
-                    <div class="bar"></div>
+                    <!-- <div class="bar"></div> -->
                 </div>
-
+                <!--
                 <div class="form-col upper-form">
                     <div class="form-headings">
                         <h2>Then narrow your results by...</h2>
@@ -100,6 +103,7 @@
                             </ul>
                     </div>
                 </div>
+                -->
             </form>
         </section>
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
